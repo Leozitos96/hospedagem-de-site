@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do leozao</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #ffdcb4;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        header nav a{
+            margin-right: 5px;
+            text-decoration: none;
+            color: rgb(129, 48, 48);
+            font-size: 16px;
+            transition: 200ms ease-in-out;
+        }
+        header nav a:hover{
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .box{
+            background: #ffb765;
+            flex: 1 1 300px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer{
+            background-color: #ffdcb4;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;            
+        }
+        @media (max-width: 768px){
+            nav{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            header{
+                flex-direction: column;
+                text-align: center;
+                font-size: 18px;
+            }
+            header nav a{
+                margin: 5px 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <p>Meu sitezao maneiro</p>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Suporte</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="box">Conteudo 1</div>
+            <div class="box">Conteudo 2</div>
+            <div class="box">Conteudo 3</div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; SITE DO LEOZAO | Todos direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
